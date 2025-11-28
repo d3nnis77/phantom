@@ -288,8 +288,8 @@ subroutine get_input_from_prompts()
       call select_unit(dist_unit,udist,ierr)
       if (ierr /= 0) print "(a)",' ERROR: length unit not recognised'
    enddo
-   call prompt('Enter the mass of the cloud (in Msun)',totmass_sphere)
-   call prompt('Enter the radius of the cloud (in pc)',r_sphere)
+   call prompt('Enter the mass of the cloud (in chosen code unit)',totmass_sphere)
+   call prompt('Enter the radius of the cloud (in chosen code unit)',r_sphere)
    call prompt('Enter the Temperature of the cloud (used for initial sound speed)',Temperature)
    call prompt('Enter the mean molecular mass (used for initial sound speed)',mu)
    if (maxvxyzu < 4) call prompt('Enter the EOS id (1: isothermal, 8: barotropic)',ieos_in)
